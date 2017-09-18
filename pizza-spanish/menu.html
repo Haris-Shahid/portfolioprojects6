@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen">
     <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
     <link rel="stylesheet" href="css/layout.css" type="text/css" media="screen"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/gif" href="images/header.png" />
     <script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
     <script src="js/cufon-yui.js" type="text/javascript"></script>
     <script src="js/cufon-replace.js" type="text/javascript"></script> 
@@ -48,6 +50,40 @@
             cursor: pointer ;
             color:red ;
         }
+        a
+        {
+            color: red;
+            text-decoration: none;
+        }
+        a:hover
+        {
+            color: #ccc;
+            text-decoration: none;
+        }
+        .image{
+            position:absolute;
+            right : 0px ;
+            top:100px ;
+            height: 45% ;
+            width: 28% ;
+        }
+        .image1{
+            position:absolute;
+            top : 120px ;
+            height: 45% ;
+            width: 28% ;
+        }
+
+        .foot{
+            height: 70% ;
+        }
+
+        @media screen and (max-width: 1110px) {
+            #content{
+                height: 90% ;
+            }
+            }
+
     </style>
  	<!--[if lt IE 8]>
     <div style=' clear: both; text-align:center; position: relative;'>
@@ -88,7 +124,7 @@
     
 	<!--==============================content================================-->
     <section id="content"><div class="ic"></div>
-        <img style='position:absolute;top : 120px ; ' height="400" width="400" src="./images/15_edit.png" alt="">
+        <img class="image1" src="./images/15_edit.png" alt="">
         <div class="main">
             <div class="wrapper">
                 <!-- <article class="col-1">
@@ -128,7 +164,7 @@
                             
                         </div>
                     </div>
-          <img style='position:absolute;right : 0px ;top:100px ' height="400" width="400" src="./images/15_edit.png" alt="">
+          <img class="image" src="./images/15_edit.png" alt="">
                 </section>
                 
                 <dialog id="win">
@@ -152,7 +188,7 @@
     <script type="text/javascript"> Cufon.now(); </script>
 </body>
 </noscript>
-<div style="text-align: center;"><div style="position:relative; top:0; margin-right:auto;margin-left:auto; z-index:99999">
+<div style="text-align: center;"><div style="position:relative; top:0; margin-right:auto;margin-left:auto; z-index:99999" class="foot" >
 <script language="javascript" type="text/javascript">
 //  lz="http://ocio.leadzu.com/banner_request.php?m=1GGYSITE66217X5&a=&idtm=468x60&lgid="+new Date().getTime();
 //  document.write("<scr"+"ipt language='javascript' type='text/javascript' src='"+lz+"'></scr"+"ipt>");
